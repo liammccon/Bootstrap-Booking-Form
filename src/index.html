@@ -1,0 +1,206 @@
+<div class="ltm-section-margin"></div>
+<div class="container-fluid">
+  <h1 class="text-danger">Bootstrap Booking Form</h1>
+  <div class="ltm-info-textbox container-fluid">
+    <i class="fa fa-info-circle"></i> &nbsp Fill out the form and click the submit button when complete...
+  </div>
+  <form id="ltm-form">
+    <div class="row">
+      <div class="col-lg-6 ltm-layout-half">
+
+        <!--USER SECTION-->
+        <div class="card border-primary">
+          <h5 class="card-header bg-primary text-center text-white">User</h5>
+          <div class="card-body">
+            <div class="form-group row">
+
+              <!--First name-->
+              <label for="first-name" class="col-sm-3 col-form-label text-center">First name:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="first-name" placeholder="Enter first name" required>
+              </div>
+
+              <div class="col-sm-12 ltm-section-margin"></div>
+
+              <!--Last name-->
+              <label for="last-name" class="col-sm-3 col-form-label text-center">Last name:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="last-name" placeholder="Enter last name" required>
+              </div>
+
+              <div class="col-sm-12 ltm-section-margin"></div>
+
+              <!--User name-->
+              <label for="username" class="col-sm-3 col-form-label text-center">Username:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="ltm-section-margin"></div>
+
+        <!-- CONTACT SECTION -->
+        <div class="card border-primary">
+          <h5 class="card-header text-center bg-primary text-white">Contact</h5>
+          <div class="card-body">
+            <!--Phone number -->
+            <label for="phone-number" class="ltm-hidden-label"></label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-phone"></i>
+                </div>
+              </div>
+              <input type="number" class="form-control" id="phone-number" placeholder="Enter phone number">
+            </div>
+
+            <!--Fax number -->
+            <label for="fax-number" class="ltm-hidden-label"></label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-fax"></i>
+                </div>
+              </div>
+              <input type="number" class="form-control" id="fax-number" placeholder="Enter fax number">
+            </div>
+
+            <!--Email -->
+            <label for="email-address" class="ltm-hidden-label"></label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </div>
+              </div>
+              <input type="text" class="form-control" id="email-address" placeholder="Enter email address">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ltm-section-margin"></div>
+
+        <!--SCHEDULE-->
+        <div class="card border-primary">
+          <h5 class="card-header bg-primary text-center text-white">Schedule</h5>
+          <div class="card-body">
+            <div class="form-group row">
+              <!--Num of adults-->
+              <label class="col-sm-3 col-form-label" for="number-of-adults">Adults:</label>
+              <div class="col-sm-9">
+                <select class="custom-select ltm-schedule" id="number-of-adults">
+                  <option value="-1" selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="4">Four</option>
+                  <option value="5">Five</option>
+                </select>
+              </div>
+              <div class="col-sm-12 ltm-card-inner-spacer"></div>
+
+              <!--Check in-->
+              <div class="col-sm-6 ">
+                <label for="check-in">Check in date:</label>
+                <br>
+                <div class="md-form md-outline input-with-post-icon datepicker">
+                  <input placeholder="Select date" type="date" id="check-in" class="form-control ltm-schedule">
+                </div>
+
+              </div>
+
+              <!--Check out-->
+              <div class="col-sm-6">
+                <label for="check-out">Check out date:</label>
+                <br>
+                <div class="md-form md-outline input-with-post-icon datepicker">
+                  <input placeholder="Select date" type="date" id="check-out" class="form-control ltm-schedule">
+                </div>
+
+              </div>
+              <div class="col-sm-12 ltm-card-inner-spacer"></div>
+
+              <!--Days-->
+              <div class="col-sm-6">
+                <label>Days:</label>
+                <input id="num-of-days" class="form-control ltm-read-only" type="text" placeholder="Displays num of days…" readonly>
+              </div>
+
+              <!--Cost-->
+              <div class="col-sm-6">
+                <label>Cost:</label>
+                <input id = "cost" class="form-control ltm-read-only" type="text" placeholder="Displays cost…" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ltm-section-margin"></div>
+
+      </div>
+      <div class="col-lg-6 ltm-layout-half">
+
+        <!--OTHER-->
+        <div class="card border-primary">
+          <h5 class="card-header bg-primary text-center text-white">Other</h5>
+          <div class="card-body">
+            <div class="form-group">
+
+              <!--Textarea-->
+              <label for="message">Message:</label>
+              <textarea class="form-control rounded-0" id="message" placeholder="Enter message here..." rows="10"></textarea>
+
+              <!--Slider-->
+              <div class="ltm-card-inner-spacer"></div>
+              <label for="range-slider">Range:</label>
+              <input id="range-slider" type="range" class="custom-range" min="0" max="10" id="customRange2">
+
+              <!--Priority-->
+              <div class="ltm-card-inner-spacer"></div>
+              
+              <label>Priority: </label>
+              <br>
+              <!--low-->
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="priority-radio-low" name="priority-radios" class="custom-control-input" checked="checked">
+                <label class="custom-control-label" for="priority-radio-low">Low</label>
+              </div>
+              <!--med-->
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="priority-radio-med" name="priority-radios" class="custom-control-input">
+                <label class="custom-control-label" for="priority-radio-med">Med</label> 
+              </div>
+              <!--high-->
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="priority-radio-high" name="priority-radios" class="custom-control-input">
+                <label class="custom-control-label" for="priority-radio-high">High</label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+
+  </form>
+  <div class="row ltm-button-row">
+    <div class="col-sm-7"> </div>
+    <div class="col-sm-2">
+      <button class="btn btn-block btn-danger ltm-btn" onclick="clearAllInputs()">
+        <i class="fa fa-trash"></i> &nbsp Clear form
+      </button>
+    </div>
+    <div class="col-sm-2">
+      <button class="btn btn-block btn-primary ltm-btn" onclick="verifyInputs()">
+        <i class="fa fa-paper-plane"></i> &nbsp Submit
+      </button>
+    </div>
+    <div class="col-sm-1"> </div>
+
+  </div>
+</div>
+<div class="ltm-section-margin"></div>
